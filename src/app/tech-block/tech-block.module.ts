@@ -3,6 +3,7 @@ import {
   LibTbAlertModule,
   LibTbButtonModule,
   LibTbCardModule,
+  LibTbSliderModule,
   LibTbStepperModule,
 } from 'tech-block-lib';
 
@@ -12,6 +13,7 @@ import {
     LibTbStepperModule,
     LibTbAlertModule,
     LibTbCardModule,
+    LibTbSliderModule,
   ],
 })
 export class TechBlockModule {}

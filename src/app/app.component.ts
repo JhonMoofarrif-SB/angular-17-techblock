@@ -5,6 +5,7 @@ import {
   ILibTbAlert,
   ILibTbButton,
   ILibTbCard,
+  ILibTbSlider,
   ILibTbStepper,
   LibTbAlertService,
 } from 'tech-block-lib';
@@ -71,6 +72,32 @@ export class AppComponent {
     ]);
   }
 
+  customSlider: ILibTbSlider = {
+    label: 'Label text',
+    animate: true,
+    // disabled: true,
+     min: 1,
+     max: 30,
+    range: false,
+    // ariaLabelledBy: 'Aria label',
+    // step: 10,
+    // tabindex: 0,
+    // class: 'custom__class',
+    libTbChange: e => {
+      console.log('libTbChange', e);
+    },
+    libTbSlideEnd: e => {
+      console.log('libTbSlideEnd', e);
+    },
+    name: 'daysDiscount',
+
+
+    floatValues: false,
+  }
+  
+
+
+
   customCard: ILibTbCard = {
     
     orientation: 'horizontal',
@@ -112,6 +139,8 @@ export class AppComponent {
       },
     ],
   };
+
+  
   
 
   // Moleculas
